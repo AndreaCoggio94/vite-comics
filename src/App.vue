@@ -168,7 +168,7 @@ export default {
 <template>
   <div class="body">
     <AppHeader :webPages="webPages"></AppHeader>
-    <AppMain :buyCards="buyCards"></AppMain>
+    <AppMain :buyCards="buyCards" :comics="comics"></AppMain>
     <AppFooter
       :footerListComics="footerListComics"
       :footerListDC="footerListDC"

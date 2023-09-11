@@ -1,10 +1,16 @@
 <script>
+import AppCards from "./AppCards.vue";
+
 export default {
   data() {
     return {};
   },
+  components: {
+    AppCards,
+  },
   props: {
     buyCards: Array,
+    comics: Array,
   },
 };
 </script>
@@ -14,7 +20,13 @@ export default {
 
   <div class="jumbotron">
     <div class="container d-flex">
-      <span> content goes here </span>
+      <AppCards
+        comics
+        v-for="(comic, index) in comics"
+        :key="index"
+        :thumb="comic.thumb"
+        :series="comic.series"
+      />
     </div>
   </div>
 
@@ -31,9 +43,9 @@ export default {
 <style lang="scss" scoped>
 .jumbotron {
   .container {
-    min-height: 8rem;
-    align-items: center;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    // align-items:
+    justify-content: space-around;
     color: white;
   }
 }
