@@ -4,23 +4,7 @@ export default {
     return {
       buyPart: [
         {
-          img: "/public/img/buy-comics-digital-comics.png",
-          title: "digital comics",
-        },
-        {
-          img: "/public/img/buy-comics-digital-comics.png",
-          title: "digital comics",
-        },
-        {
-          img: "/public/img/buy-comics-digital-comics.png",
-          title: "digital comics",
-        },
-        {
-          img: "/public/img/buy-comics-digital-comics.png",
-          title: "digital comics",
-        },
-        {
-          img: "/public/img/buy-comics-digital-comics.png",
+          img: "/img/buy-comics-digital-comics.png",
           title: "digital comics",
         },
       ],
@@ -30,6 +14,14 @@ export default {
 </script>
 
 <template>
+  <!-- content goes here -->
+
+  <div class="jumbotron">
+    <div class="container d-flex">
+      <span> content goes here </span>
+    </div>
+  </div>
+
   <div class="buy">
     <div class="container d-flex">
       <div class="d-flex" v-for="item in buyPart">
@@ -41,6 +33,15 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.jumbotron {
+  .container {
+    min-height: 8rem;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+  }
+}
+
 .buy {
   background-color: rgb(71, 71, 223);
   color: white;
