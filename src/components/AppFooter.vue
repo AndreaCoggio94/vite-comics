@@ -18,25 +18,41 @@ export default {
       <div class="links d-flex">
         <ul>
           <h1>DC COMICS</h1>
-          <li v-for="(item, index) in footerListComics" :key="index">
+          <li
+            class="text-capitalize"
+            v-for="(item, index) in footerListComics"
+            :key="index"
+          >
             {{ item }}
           </li>
         </ul>
         <ul>
           <h1>SHOP</h1>
-          <li v-for="(item, index) in footerListShop" :key="index">
+          <li
+            class="text-capitalize"
+            v-for="(item, index) in footerListShop"
+            :key="index"
+          >
             {{ item }}
           </li>
         </ul>
         <ul>
           <h1>DC</h1>
-          <li v-for="(item, index) in footerListDC" :key="index">
+          <li
+            class="text-capitalize"
+            v-for="(item, index) in footerListDC"
+            :key="index"
+          >
             {{ item }}
           </li>
         </ul>
         <ul>
           <h1>SITES</h1>
-          <li v-for="(item, index) in footerListSites" :key="index">
+          <li
+            class="text-capitalize"
+            v-for="(item, index) in footerListSites"
+            :key="index"
+          >
             {{ item }}
           </li>
         </ul>

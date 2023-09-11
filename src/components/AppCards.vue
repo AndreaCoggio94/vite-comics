@@ -12,7 +12,7 @@ export default {
     <div class="image">
       <img class="" :src="thumb" alt="" />
     </div>
-    <span class="">{{ series }}</span>
+    <span class="text">{{ series }}</span>
   </div>
 </template>
 
@@ -24,7 +24,9 @@ export default {
   margin: 0.25rem;
   text-align: center;
   font-size: 0.6rem;
-
+  .text {
+    margin-top: 0.25rem;
+  }
   .image {
     height: 140px;
     aspect-ratio: 1;
