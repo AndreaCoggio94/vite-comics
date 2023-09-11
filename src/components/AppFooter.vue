@@ -83,9 +83,11 @@ export default {
   background-image: url("/img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
   .container {
     width: 100%;
     height: 100%;
+    justify-content: space-between;
     .links {
       max-height: 400px;
       flex-direction: column;

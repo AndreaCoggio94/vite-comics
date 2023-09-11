@@ -19,12 +19,13 @@ export default {
       </div>
       <div class="d-flex col">
         <span
+          :class="item.active ? 'active' : ''"
           class="text-uppercase"
           v-for="(item, index) in webPages"
           :key="index"
           href="#"
         >
-          {{ item }}</span
+          {{ item.text }}</span
         >
       </div>
     </div>
@@ -39,6 +40,10 @@ export default {
     justify-content: space-between;
     align-items: center;
     height: 7rem;
+
+    .active {
+      color: #0282f9;
+    }
     .col-4 {
       display: flex;
 
