@@ -9,13 +9,7 @@ export default {
 </script>
 
 <template>
-  <header>
-    <h1>{{ message }}</h1>
-  </header>
+  <div class="container"></div>
 </template>
 
-<style lang="scss" scoped>
-h1 {
-  font-size: 3rem;
-}
-</style>
+<style lang="scss" scoped></style>

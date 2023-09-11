@@ -16,9 +16,17 @@ export default {
 </script>
 
 <template>
-  <AppHeader></AppHeader>
-  <AppMain></AppMain>
-  <AppFooter></AppFooter>
+  <div class="body">
+    <AppHeader></AppHeader>
+    <AppMain></AppMain>
+    <AppFooter></AppFooter>
+  </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.body {
+  background-color: black;
+  // height: 100vh;
+  // width: 100vw;
+}
+</style>

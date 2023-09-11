@@ -21,34 +21,55 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <nav class="nav-bar d-flex">
+  <!-- nav-bar -->
+
+  <nav class="nav-bar">
+    <div class="container d-flex">
       <div class="col-4">
         <img src="../../public/img/dc-logo.png" alt="logo.png" />
       </div>
       <div class="d-flex col">
         <span v-for="item in webPages" href="#"> {{ item }}</span>
       </div>
-    </nav>
+    </div>
+  </nav>
+
+  <!-- content goes here -->
+
+  <div class="jumbotron">
+    <div class="container d-flex">
+      <span> content goes here </span>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .nav-bar {
-  justify-content: space-between;
-  align-items: center;
-
-  .col-4 {
-    display: flex;
+  background-color: white;
+  .container {
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    img {
-      width: 5rem;
-      aspect-ratio: 1;
+    height: 7rem;
+    .col-4 {
+      display: flex;
+
+      img {
+        width: 5rem;
+        aspect-ratio: 1;
+      }
+    }
+    div.d-flex {
+      justify-content: space-around;
     }
   }
-  div.d-flex {
-    justify-content: space-around;
+}
+
+.jumbotron {
+  .container {
+    min-height: 8rem;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
   }
 }
 </style>
