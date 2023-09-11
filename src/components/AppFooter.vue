@@ -41,6 +41,19 @@ export default {
       </ul>
     </div>
   </div>
+  <footer class="bottom-footer">
+    <div class="container d-flex">
+      <div class="col signUpButton">SIGN-UP NOW!</div>
+      <div class="col-3 d-flex links">
+        <h2>FOLLOW US</h2>
+        <img src="/img/footer-facebook.png" alt="" />
+        <img src="/img/footer-twitter.png" alt="" />
+        <img src="/img/footer-youtube.png" alt="" />
+        <img src="/img/footer-pinterest.png" alt="" />
+        <img src="/img/footer-periscope.png" alt="" />
+      </div>
+    </div>
+  </footer>
 </template>
 
 <style lang="scss" scoped>
@@ -53,6 +66,10 @@ export default {
     max-height: 400px;
     flex-direction: column;
     flex-wrap: wrap;
+    ul {
+      list-style: none;
+      padding: 0;
+    }
   }
 }
 </style>
