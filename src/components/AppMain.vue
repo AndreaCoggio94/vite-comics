@@ -23,7 +23,6 @@ export default {
       <div class="btn-blue">CURRENT SERIES</div>
       <div class="d-flex">
         <AppCards
-          comics
           v-for="(comic, index) in comics"
           :key="index"
           :thumb="comic.thumb"
@@ -50,7 +49,7 @@ export default {
     url("/img/jumbotron.jpg");
   padding-top: 280px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   .container {
     display: flex;
     flex-direction: column;
