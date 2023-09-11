@@ -18,7 +18,12 @@ export default {
         <img src="/img/dc-logo.png" alt="logo.png" />
       </div>
       <div class="d-flex col">
-        <span v-for="(item, index) in webPages" :key="index" href="#">
+        <span
+          class="text-uppercase"
+          v-for="(item, index) in webPages"
+          :key="index"
+          href="#"
+        >
           {{ item }}</span
         >
       </div>
@@ -29,6 +34,7 @@ export default {
 <style lang="scss" scoped>
 .nav-bar {
   background-color: white;
+  font-size: 0.8rem;
   .container {
     justify-content: space-between;
     align-items: center;

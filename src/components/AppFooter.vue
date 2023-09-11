@@ -129,7 +129,7 @@ export default {
     align-items: center;
     padding: 1rem 0;
     .signUp-button {
-      border: 2px solid blue;
+      border: 2px solid #0282f9;
       padding: 0.5rem;
     }
     div.d-flex {
@@ -139,6 +139,7 @@ export default {
       h2 {
         font-size: 1.5rem;
         padding-right: 0.5rem;
+        color: #0282f9;
       }
       img {
         padding: 0 0.5rem;

@@ -56,7 +56,7 @@ export default {
     flex-direction: column;
     .btn-blue {
       color: white;
-      background-color: blue;
+      background-color: #0282f9;
       display: inline-block;
       padding: 0.5rem 1rem;
       margin: 0 auto 0 0;
@@ -64,6 +64,7 @@ export default {
     .btn-blue.btn {
       align-self: center;
       margin: auto;
+      margin-bottom: 1rem;
       border-radius: 0;
     }
     .d-flex {
@@ -76,7 +77,7 @@ export default {
 }
 
 .buy {
-  background-color: rgb(71, 71, 223);
+  background-color: #0282f9;
   color: white;
   .container {
     padding: 2rem 0;
