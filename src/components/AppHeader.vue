@@ -1,20 +1,10 @@
 <script>
 export default {
   data() {
-    return {
-      webPages: [
-        "characters",
-        "comics",
-        "movies",
-        "tv",
-        "games",
-        "collectibles",
-        "videos",
-        "fans",
-        "news",
-        "shop",
-      ],
-    };
+    return {};
+  },
+  props: {
+    webPages: Array,
   },
 };
 </script>
@@ -28,7 +18,9 @@ export default {
         <img src="/img/dc-logo.png" alt="logo.png" />
       </div>
       <div class="d-flex col">
-        <span v-for="item in webPages" href="#"> {{ item }}</span>
+        <span v-for="(item, index) in webPages" :key="index" href="#">
+          {{ item }}</span
+        >
       </div>
     </div>
   </nav>

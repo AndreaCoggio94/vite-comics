@@ -1,14 +1,10 @@
 <script>
 export default {
   data() {
-    return {
-      buyPart: [
-        {
-          img: "/img/buy-comics-digital-comics.png",
-          title: "digital comics",
-        },
-      ],
-    };
+    return {};
+  },
+  props: {
+    buyCards: Array,
   },
 };
 </script>
@@ -24,7 +20,7 @@ export default {
 
   <div class="buy">
     <div class="container d-flex">
-      <div class="d-flex" v-for="item in buyPart">
+      <div class="d-flex" v-for="(item, index) in buyCards" :key="index">
         <img :src="item.img" alt="" />
         <span> {{ item.title }} </span>
       </div>

@@ -1,20 +1,13 @@
 <script>
 export default {
   data() {
-    return {
-      webPages: [
-        "characters",
-        "comics",
-        "movies",
-        "tv",
-        "games",
-        "collectibles",
-        "videos",
-        "fans",
-        "news",
-        "shop",
-      ],
-    };
+    return {};
+  },
+  props: {
+    footerListComics: Array,
+    footerListDC: Array,
+    footerListShop: Array,
+    footerListSites: Array,
   },
 };
 </script>
@@ -23,7 +16,26 @@ export default {
   <div class="top-footer">
     <div class="container d-flex">
       <ul>
-        <li v-for="item in webPages">
+        <h1>DC COMICS</h1>
+        <li v-for="(item, index) in footerListComics" :key="index">
+          {{ item }}
+        </li>
+      </ul>
+      <ul>
+        <h1>SHOP</h1>
+        <li v-for="(item, index) in footerListShop" :key="index">
+          {{ item }}
+        </li>
+      </ul>
+      <ul>
+        <h1>DC</h1>
+        <li v-for="(item, index) in footerListDC" :key="index">
+          {{ item }}
+        </li>
+      </ul>
+      <ul>
+        <h1>SITES</h1>
+        <li v-for="(item, index) in footerListSites" :key="index">
           {{ item }}
         </li>
       </ul>
@@ -35,5 +47,12 @@ export default {
 .top-footer {
   color: white;
   background-image: url("/img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    max-height: 400px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 </style>
